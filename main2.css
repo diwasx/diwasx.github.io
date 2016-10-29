@@ -1,0 +1,70 @@
+
+html {
+	background: url("bg.JPG") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: "Helvitica New", sans-serif;
+}
+.prof-box{
+	width:400px;
+	height:400px;
+	padding:40px;
+	color: powderblue;
+	background: rgba(10,0,90,0.6);
+	margin:0 auto;
+	margin-top:140px;
+	text-align:center;
+	border:8px grey solid;
+}
+.prof-pic{
+	border-radius:50%;
+	height: 200px;
+	width:200px;
+	border:0px;
+}
+.navbar{
+	display: flex;
+	padding: 0px 200px 0px 450px;
+	color: white;
+	background: brown;
+	margin: 10px 0px 10px 0px;
+}
+nav p{
+	padding:20px;
+}
+footer{
+	text-align:right;
+	color:pink;
+	background-color:#db3434;
+}
+article{
+    border: 2px #ab598a solid;
+    text-align: right;
+    padding: 30px;
+    margin: 30px;
+    color: #c2e7ef;
+    font-weight: bold;
+    background: rgba(0 ,0 ,0 ,0.4);
+}
+#icon{
+
+	padding-top:10px;
+	float:right;
+
+}
+.navbar a{
+	text-decoration: none;
+	color:white;
+}
+.sc{
+	float:right;
+	margin:0px;
+	padding:3px;
+	width:30px;
+	height:30px;
+}
+#high{
+	background: rgba(89, 71, 62, 0.3);
+}
