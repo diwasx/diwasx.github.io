@@ -80,7 +80,7 @@ function setup(){
     inputPhrase.attribute('value','Hello World! I am genetic_algorithm');
 
     // if(inputPhrase.attribute('value') == 'Hello World! I am genetic_algorithm'){
-        inputPhrase.attribute('onfocus','this.value=""');
+        // inputPhrase.attribute('onfocus','this.value=""');
     // }
     // if(inputPhrase.attribute('value') == ''){
         // inputPhrase.attribute('onblur','this.value="Hello World! I am genetic_algorithm"');
@@ -93,7 +93,7 @@ function setup(){
     inputPop.style('font-size', '12px');
     inputPop.attribute('placeholder', '2000');
     inputPop.attribute('value','2000');
-    inputPop.attribute('onfocus','this.value=""');
+    // inputPop.attribute('onfocus','this.value=""');
 
     inputMR = createInput();
     inputMR.position(120, 632);
@@ -102,7 +102,7 @@ function setup(){
     inputMR.style('font-size', '12px');
     inputMR.attribute('placeholder', '0.15');
     inputMR.attribute('value','0.15');
-    inputMR.attribute('onfocus','this.value=""');
+    // inputMR.attribute('onfocus','this.value=""');
 
     
     buttonStart = createButton('Start Algorithm');
