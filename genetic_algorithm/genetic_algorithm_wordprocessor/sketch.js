@@ -111,16 +111,35 @@ function setup(){
     buttonStart.mousePressed(startProgram);
     buttonStart.class="input";
     buttonStart.id("btnStart");
-    startProgram();
+
+    // try{
+        startProgram();
+    // }
+    // catch(err){
+    //     console.log(err);
+    //     alert("Error occured. Please refresh");
+    // }
 
 }
 
 function draw(){
     if(started){
         population.naturalSelection();
-        population.generate();
+        try{
+            population.generate();
+        }catch(err){
+            noLoop();
+            // alert("Error occured. Please refresh");
+            if(!alert('Error occured\nThis may be caused due to low population value')){window.location.reload();}
+        }
         population.calcFitness();
-        population.evaluate();
+
+        try{
+            population.evaluate();
+        }catch(err){
+            noLoop();
+            if(!alert('Error occured\nThis may be caused due to wrong data')){window.location.reload();}
+        }
         displayInfo();
 
         if(population.isFinished()){
@@ -185,7 +204,8 @@ function startProgram(){
     // || inputPop.value() !="" || inputMR.value() !="")
     if(inputPhrase.value()!=""){
         if(inputPop.value()!=""){
-            if(inputMR.value()!=""){
+            if(inputMR.value()!="" && inputMR.value()<=100){
+            // if(inputMR.value()<="100"){
                 target = inputPhrase.value();
                 populationSize = inputPop.value();
                 mutationRate = inputMR.value();
@@ -198,7 +218,7 @@ function startProgram(){
                 limitedP.show();
             }
             else{
-                alert("Enter mutation rate");
+                alert("Mutation rate empty or more than 100%");
             }
         }else{
             alert("Enter population size");
