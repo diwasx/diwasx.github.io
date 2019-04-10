@@ -17,12 +17,12 @@ function setup(){
     bestPhrase.id("best");
 
     txtPercent = createP("%");
-    txtPercent.position(170,620);
+    txtPercent.position(170,520);
     txtPercent.id("percent");
 
     txtPopWarn = createP("Too much population size can hang you brower or computer");
-    txtPopWarn.position(210,584);
-    txtPopWarn.id("percent");
+    txtPopWarn.position(210,484);
+    txtPopWarn.id("warning");
 
     sourceLink=createA('http://github.com/diwasx/genetic_algorithm_wordprocessor', 'Source Code: http://github.com/diwasx/genetic_algorithm_wordprocessor')
     sourceLink.id("source");
@@ -31,8 +31,6 @@ function setup(){
     // sourceLink.style('position', 'absolute');
     sourceLink.style('bottom', '10px');
     // window.open("https://www.w3schools.com");
-
-
 
     limitedP= createP("Limited Phrase");
     limitedP.position(700,10);
@@ -53,7 +51,6 @@ function setup(){
     timer.position(10,280);
     timer.id("timer");
     
-
     buttonToogle = createButton('Show/Hide all population');
     buttonToogle.position(470,25)
     buttonToogle.mousePressed(toogle);
@@ -62,7 +59,7 @@ function setup(){
     //Input Section
 
     inputP = createP("Input");
-    inputP.position(10,500);
+    inputP.position(10,400);
     inputP.id("input");
 
     let inputText = "<h2>Phrases: </h2><br>"
@@ -71,8 +68,7 @@ function setup(){
     inputP.html(inputText);
 
     inputPhrase = createInput();
-    // inputPhrase = createInput().attribute('placeholder', 'Hello World');
-    inputPhrase.position(120, 532);
+    inputPhrase.position(120, 432);
     inputPhrase.style('width', '550px');
     inputPhrase.style('height', '3%');
     inputPhrase.style('font-size', '16px');
@@ -87,7 +83,7 @@ function setup(){
     // }
     
     inputPop = createInput();
-    inputPop.position(120, 598);
+    inputPop.position(120, 498);
     inputPop.style('width', '70px');
     inputPop.style('height', '2%');
     inputPop.style('font-size', '12px');
@@ -96,7 +92,7 @@ function setup(){
     // inputPop.attribute('onfocus','this.value=""');
 
     inputMR = createInput();
-    inputMR.position(120, 632);
+    inputMR.position(120, 532);
     inputMR.style('width', '30px');
     inputMR.style('height', '2%');
     inputMR.style('font-size', '12px');
@@ -107,7 +103,7 @@ function setup(){
     
     buttonStart = createButton('Start Algorithm');
     // buttonStart.position(width/2,height);
-    buttonStart.position(10,670);
+    buttonStart.position(10,570);
     buttonStart.mousePressed(startProgram);
     buttonStart.class="input";
     buttonStart.id("btnStart");
