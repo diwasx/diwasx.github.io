@@ -1,4 +1,4 @@
-
+# Genetic Algorithm word processor
 <br />
   <h3 align="center">Word processor based on genetic algorithm</h3>
 
@@ -17,6 +17,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Darwinian Natural Selection](#darwinian-natural-selection)
   * [Built With](#built-with)
 * [Contributing](#contributing)
 * [License](#license)
@@ -27,10 +28,21 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+### About The Project
 
 [![https://github.com/diwasx/genetic_algorithm_wordprocessor/](./shot.png)](https://github.com/diwasx/genetic_algorithm_wordprocessor)
-This is a word processor application that perform genetic algorithm on population of random letters and characters. This application is based on Darwin's Natural Selection. In a particular generation, 
+This is a word processor application that perform genetic algorithm on population of random letters and characters. This application is based on Darwinian's Natural Selection, the process that drives biological evolution. Natural selection is the differential survival and reproduction of individuals due to differences in phenotype. It is a key mechanism of evolution, the change in the heritable traits characteristic of a population over generations. 
+
+### Darwinian Natural Selection
+The genetic algorithm repeatedly modifies a population of individual solutions. At each step, the genetic algorithm selects individuals at random from the current population to be parents and uses them to produce the children for the next generation. Over successive generations, the population "evolves" toward an optimal solution. 
+
+
+* Heredity. There must be a process in place by which children receive the properties of their parents. If creatures live long enough to reproduce, then their traits are passed down to their children in the next generation of creatures.
+
+* Variation. There must be a variety of traits present in the population or a means with which to introduce variation. For example, let’s say there is a population of beetles in which all the beetles are exactly the same: same color, same size, same wingspan, same everything. Without any variety in the population, the children will always be identical to the parents and to each other. New combinations of traits can never occur and nothing can evolve.
+
+* Selection. There must be a mechanism by which some members of a population have the opportunity to be parents and pass down their genetic information and some do not. This is typically referred to as “survival of the fittest.” For example, let’s say a population of gazelles is chased by lions every day. The faster gazelles are more likely to escape the lions and are therefore more likely to live longer and have a chance to reproduce and pass their genes down to their children. The term fittest, however, can be a bit misleading. Generally, we think of it as meaning bigger, faster, or stronger. While this may be the case in some instances, natural selection operates on the principle that some traits are better adapted for the creature’s environment and therefore produce a greater likelihood of surviving and reproducing. It has nothing to do with a given creature being “better” (after all, this is a subjective term) or more “physically fit.” 
+
 ### Built With
 
 * [Javascript](https://www.javascript.com/)

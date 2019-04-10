@@ -191,7 +191,7 @@ function toogle(id) {
     else{
         a.style.display = 'block';
         l.style.display = 'none';
-        allP.html("All population: <br><br>" + population.allPhrases())
+        allP.html("All population:(Scroll down) <br><br>" + population.allPhrases())
     }
 }
 
@@ -205,7 +205,7 @@ function startProgram(){
     if(inputPhrase.value()!=""){
         if(inputPop.value()!=""){
             if(inputMR.value()!="" && inputMR.value()<=100){
-            // if(inputMR.value()<="100"){
+                buttonToogle.hide();
                 target = inputPhrase.value();
                 populationSize = inputPop.value();
                 mutationRate = inputMR.value();
