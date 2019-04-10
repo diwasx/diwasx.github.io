@@ -30,7 +30,7 @@ function setup(){
     timer.id("timer");
     
     
-    target = "I am the Badass in th world helehelhed dhfaldk ";
+    target = "I am the Badass programmer in the World ";
     populationSize = 3000;
     mutationRate = 0.01;
     buttonToogle = createButton('Show/Hide all population');
