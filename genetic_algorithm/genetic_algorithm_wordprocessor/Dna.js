@@ -1,17 +1,17 @@
-// function newChar() {
-//     var text = "";
-//     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
-//     text = possible.charAt(Math.floor(Math.random() * possible.length));
-//     return text;
-// }
-
 function newChar() {
-  let c = floor(random(63, 122));
-  if (c === 63) c = 32;
-  if (c === 64) c = 46;
-
-  return String.fromCharCode(c);
+    var text = "";
+    var possible = " 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,;:'\"?{}[]\\/|!@#$%^&*()_+-=~`";
+    text = possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
 }
+
+// function newChar() {
+//   let c = floor(random(63, 122));
+//   if (c === 63) c = 32;
+//   if (c === 64) c = 46;
+
+//   return String.fromCharCode(c);
+// }
 
 class Dna{
     constructor(num){

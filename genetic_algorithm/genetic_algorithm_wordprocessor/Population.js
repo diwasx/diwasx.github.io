@@ -7,6 +7,7 @@ class Population{
         this.target=t;
         this.mutationRate=mr;
         this.perfectScore=1;
+        this.maxFitness=0;
 
         this.best="";
         this.population=[];
@@ -32,16 +33,16 @@ class Population{
     //Selection of fitnessness function is very important
     naturalSelection(){
         this.matingPool = [];
-        let maxFitness = 0;
+        // maxFitness = 0;
         for(let i=0; i<this.populationSize; i++){
-            if(this.population[i].fitness > maxFitness){
-                maxFitness = this.population[i].fitness;
+            if(this.population[i].fitness > this.maxFitness){
+                this.maxFitness = this.population[i].fitness;
             }
         }
-        // console.log("Max fitness = "+maxFitness);
+        // console.log("Max fitness = "+this.maxFitness);
         for(let i=0; i<this.populationSize; i++){
             //Based on wheel of fortune
-            let fitness = map(this.population[i].fitness, 0, maxFitness, 0, 1); //Normalizing between 0 to 1
+            let fitness = map(this.population[i].fitness, 0, this.maxFitness, 0, 1); //Normalizing between 0 to 1
             let n = floor(fitness * 100); //This multiplier defines population with hightest fitness has mulipilier amount in matingPool(Eg; 100 space is allocated for hightest fitness)
             // console.log(this.population[i].gene_joint+"=>"+this.population[i].fitness);
             // console.log("Fitness = "+fitness);
@@ -110,6 +111,10 @@ class Population{
             total+= this.population[i].fitness;
         }
         return total / (this.populationSize);
+    }
+
+    getMaxFitness(){
+        return this.maxFitness;
     }
 
     limitedPhrases(){
