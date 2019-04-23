@@ -1,4 +1,4 @@
-const TOTAL = 500;
+const TOTAL = 300;
 let birds = [];
 let savedBirds = [];
 let pipes = [];
@@ -10,20 +10,31 @@ let sliderPipe;
 let sliderPipeP;
 let genP;
 let birdId=1;
+let scoreVal=0;
+let scoreP;
+let scoreMax=0;
+let scoreMaxP;
 
 function setup() {
     title = createP("Machine learn to play Flappy bird");
     title.id("title");
     title.position(5,0);
-
-    // createCanvas(640, 480);
-    var cnv = createCanvas(1024,768);
+    // var cnv = createCanvas(1024,768);
+    var cnv = createCanvas(1000,570);
     cnv.position(0, 40);
 
+
+    scoreP = createP("");
+    scoreP.id("scoreP");
+    scoreP.position(200,600);
+    scoreMaxP = createP("");
+    scoreMaxP.id("scoreMaxP");
+    scoreMaxP.position(300,600);
+
     var txt=createP("Speed slider");
-    txt.position(0,800);
+    txt.position(0,600);
     slider = createSlider(1,100,1);
-    slider.position(0,850);
+    slider.position(0,630);
 
     sliderPipeP=createP("Pipe gap");
     sliderPipeP.position(width+40,200);
@@ -37,14 +48,21 @@ function setup() {
 
     genP = createP("Generation");
     genP.id("gen");
-    genP.position(0,900);
+    genP.position(500,600);
 }
 
 function draw() {
 
     genP.html("Generation: " + gen);
+    scoreP.html("Score: " + scoreVal);
+    scoreMaxP.html("Highest Score: " + scoreMax);
 
     for (let n = 0; n<slider.value(); n++){
+        scoreVal++;
+        if(scoreVal>scoreMax){
+            scoreMax = scoreVal;
+        }
+
         if (counter % 75 == 0) {
             pipes.push(new Pipe());
         }
@@ -76,6 +94,7 @@ function draw() {
         }
         if(birds.length === 0){
             counter = 0;
+            scoreVal=0;
             nextGeneration();
             pipes = [];
         }

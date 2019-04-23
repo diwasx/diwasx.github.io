@@ -26,7 +26,7 @@ class Bird{
     show(){
         stroke(255);
         fill(this.r,this.g,this.b);
-        ellipse(this.x, this.y, 52, 52);
+        ellipse(this.x, this.y, 42, 42);
 
         //Text color according to ball color
         noStroke();
@@ -35,7 +35,7 @@ class Bird{
         }else{
             fill(255);
         }
-        text(this.brain.bId,this.x-16,this.y);
+        text(this.brain.bId,this.x-6,this.y);
     }
 
     up(){

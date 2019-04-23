@@ -1,7 +1,6 @@
 let gen=0;
 
 function nextGeneration(){
-
     gen++
     console.log("Next Generation");
     calculateFitness();
