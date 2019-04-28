@@ -68,7 +68,6 @@ def rsa():
     while(a==b):
         a=(random.choice(primes))
         b=(random.choice(primes))
-        print("here")
 
     print("value of a is", a);
     print("value of b is", b,"\n");
