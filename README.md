@@ -1,16 +1,27 @@
-# RSA Algorithm
-* [Demo](https://www.onlinegdb.com/rJtgtI7iN)
-* [Documentation](https://github.com/diwasx/diwasx.github.io/tree/master/RSA_algorithm)
+<br/>
+  <h3 align="center">Personal Portfolio</h3>
 
-# evolving_rocket
-* [Demo](https://diwasx.github.io/genetic_algorithm/evolving_rocket/)
-* [Source Code](https://github.com/diwasx/diwasx.github.io/tree/master/genetic_algorithm/evolving_rocket)
+  <p align="center">
+Personal/Project website hosted on GitHub Pages.
+    <br/>
+    <a target="_blank" href="https://diwasx.github.io/">https://diwasx.github.io</a>
+  </p>
+</p>
 
-# genetic_algorithm_wordprocessor
-* [Demo](https://diwasx.github.io/genetic_algorithm_wordprocessor)
-* [Documentation](https://github.com/diwasx/genetic_algorithm_wordprocessor)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-# flappyBird
-* [Demo](https://diwasx.github.io/neuro_evolution/flappyBird)
-* [Source Code](https://github.com/diwasx/diwasx.github.io/tree/master/neuro_evolution/flappyBird)
+[![https://diwasx.github.io](images/preview.jpg)](https://diwasx.github.io)
 
+Every great developer has a personal website filled with amazing examples of their code - Here's mine. Interested in working together or hiring me for your project? Contact me at diwasx@outlook.com
+
+### Built With
+
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
